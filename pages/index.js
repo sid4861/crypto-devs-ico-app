@@ -72,10 +72,10 @@ export default function Home() {
         const web3Provider = new providers.Web3Provider(ethereum);
 
         const { chainId } = await web3Provider.getNetwork();
-        if (chainId !== 4) {
-          window.alert("Change the network to Rinkeby");
-          throw new Error("Change network to Rinkeby");
-        }
+        // if (chainId !== 4) {
+        //   window.alert("Change the network to Rinkeby");
+        //   throw new Error("Change network to Rinkeby");
+        // }
 
         if (needSigner) {
           const signer = web3Provider.getSigner();
